@@ -1,0 +1,829 @@
+* {
+    box-sizing: border-box;
+    user-select: none;
+}
+body {
+    padding: 0;
+    margin: 0;
+    background: #050f31;
+}
+
+
+.header {
+    z-index: 10;
+    height: 100px;
+    position: sticky;
+    top: 0px;
+    pointer-events: auto;
+    background-image: linear-gradient(to bottom, #050f31ff 0%, #050f3100 100%);
+}
+.abitendo-logo {
+    max-height: 30px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    pointer-events: auto;
+    transform: translateX(-50%) translateY(-50%);
+    filter: drop-shadow(0px 0px 20px #050f31);
+}
+
+
+a {
+    text-decoration: none;
+}
+
+
+.footer {
+    overflow: auto;
+    text-align: center;
+    padding: 5px;
+    padding: 20px;
+    margin: 10px auto;
+    margin-top: -20px;
+}
+.link-footer {
+    color: white;
+    font-family: Futura, "Trebuchet MS", Avenir, Arial, sans-serif;
+    text-decoration: none;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+
+.all-link-boxes {
+    margin-top: -27px;
+    margin-bottom: 0px;
+    margin-left: 12px;
+    margin-right: 12px;
+}
+.box-stack {
+    position: relative;
+    height: 180px;
+    max-width: 600px;
+    margin: 0;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 25px;
+}
+.link-box {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    transition: all .3s ease-in-out;
+    border-radius: 25px;
+    overflow: clip;
+}
+
+
+.back-box {
+    display: block;
+    position: relative;
+    background-color: #0f164a;
+    height: 50px;
+    max-width: 600px;
+    margin: 0;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 25px;
+    transition: all .3s ease-in-out;
+    border-radius: 25px;
+    overflow: clip;
+}
+.back-link {
+    position: absolute;
+    color: white;
+    font-family: Futura, "Trebuchet MS", Avenir, Arial, sans-serif;
+    text-decoration: none;
+    font-weight: bold;
+    text-indent: 30px;
+    width: 123px;
+    height: 35px;
+    padding-top: 6px;
+    padding-left: 18px;
+    background-image: url("images/backwards-light.png");
+    background-repeat: no-repeat;
+    background-size: 22px;
+    background-position: 12px 7.2px;
+    top: 7px;
+    left: 49%;
+    translate: -50%;
+}
+
+
+.link-box-image {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+}
+.link-box-text {
+    position: relative;
+    width: 61%;
+    top: 35%;
+    left: 35%;
+    transform: translateY(-50%);
+}
+
+
+.link-box-title-light {
+    color: white;
+    font-family: Futura, "Trebuchet MS", Avenir, Arial, sans-serif;
+    font-size: 23px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+.link-box-title-dark {
+    color: #001454;
+    font-family: Futura, "Trebuchet MS", Avenir, Arial, sans-serif;
+    font-size: 23px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+
+.vorabifeier-box .link-light, .abigag-box .link-light, .entlassfeier-box .link-light, .abiball-box .link-light {
+    background-image: url("images/play-dark.png");
+}
+.vorabifeier-box .link-dark, .abigag-box .link-dark, .entlassfeier-box .link-dark, .abiball-box .link-dark {
+    background-image: url("images/play-light.png");
+}
+.songs-box .link-light {
+    background-image: url("images/forwards-dark.png");
+}
+.songs-box .link-dark {
+    background-image: url("images/forwards-light.png");
+}
+.applemusic-box .link-light, .spotify-box .link-light, .ytmusic-box .link-light {
+    background-image: url("images/listen-dark.png");
+}
+.applemusic-box .link-dark, .spotify-box .link-dark, .ytmusic-box .link-dark {
+    background-image: url("images/listen-light.png");
+}
+
+
+.link-light {
+    color: #001454;
+    font-family: Futura, "Trebuchet MS", Avenir, Arial, sans-serif;
+    text-decoration: none;
+    font-weight: bold;
+    text-indent: 23px;
+    width: 141px;
+    height: 35px;
+    padding-top: 6px;
+    padding-left: 18px;
+    background-color: white;
+    border-radius: 30px;
+    border-width: 5px;
+    font-size: 18px;
+    background-repeat: no-repeat;
+    background-size: 22px;
+    background-position: 12px 7.2px;
+    position: relative;
+    top: 3px;
+    text-decoration: none;
+    transition: all .3s ease-in-out;
+}
+.link-dark {
+    color: white;
+    font-family: Futura, "Trebuchet MS", Avenir, Arial, sans-serif;
+    text-decoration: none;
+    font-weight: bold;
+    text-indent: 23px;
+    width: 141px;
+    height: 35px;
+    padding-top: 6px;
+    padding-left: 18px;
+    background-color: #001454;
+    border-radius: 30px;
+    border-width: 5px;
+    font-size: 18px;
+    background-repeat: no-repeat;
+    background-size: 22px;
+    background-position: 12px 7.2px;
+    position: relative;
+    top: 3px;
+    text-decoration: none;
+    transition: all .3s ease-in-out;
+}
+
+
+.social-links {
+    margin: auto;
+    margin-top: 30px;
+    position: relative;
+    height: 70px;
+    width: 150px;
+}
+.instagram {
+    position: absolute;
+    left: 0px;
+    background-image: url("images/instagram.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 40px;
+    height: 40px;
+}
+.youtube {
+    position: absolute;
+    left: 50px;
+    background-image: url("images/youtube.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 40px;
+    height: 40px;
+}
+.github {
+    position: absolute;
+    left: 100px;
+    background-image: url("images/github.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 40px;
+    height: 40px;
+}
+
+
+@keyframes spin {
+    from {
+        transform: translate(-50%, -50%) rotate(0deg);
+    }
+    to {
+        transform: translate(-50%, -50%) rotate(360deg);
+    }
+}
+
+
+
+
+
+
+.ytmusic-image {
+    position: absolute;
+    top: 50%;
+    left: 17%;
+    transform: translate(-50%, -50%);
+    background-image: url("images/ytmusic-icon.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 240px;
+    height: 240px;
+    animation-name: spin;
+    animation-duration: 5000ms;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-play-state: running;
+}
+.ytmusic-box.colorful-box {
+    clip-path: circle(150% at 17% 50%);
+}
+.ytmusic-box.blue-box {
+    background: radial-gradient(circle at 0% 50%, rgba(201,0,106,1) 0%, rgba(201,0,106,1) 25%, rgba(15,22,74,1) 40%, rgba(15,22,74,1) 100%);
+}
+.ytmusic-box.colorful-box {
+    background-color: #C9006A;
+    transition-delay: 0ms;
+    opacity: 0;
+}
+
+
+.spotify-image {
+    position: absolute;
+    top: 50%;
+    left: 17%;
+    transform: translate(-50%, -50%);
+    background-image: url("images/spotify-icon.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 240px;
+    height: 240px;
+    animation-name: spin;
+    animation-duration: 5000ms;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-play-state: running;
+}
+.spotify-box.colorful-box {
+    clip-path: circle(150% at 17% 50%);
+}
+.spotify-box.blue-box {
+    background: radial-gradient(circle at 0% 50%, rgba(198,251,255,1) 0%, rgba(198,251,255,1) 25%, rgba(15,22,74,1) 40%, rgba(15,22,74,1) 100%);
+}
+.spotify-box.colorful-box {
+    background-color: #C6FBFF;
+    transition-delay: 0ms;
+    opacity: 0;
+}
+
+
+.applemusic-image {
+    position: absolute;
+    top: 50%;
+    left: 17%;
+    transform: translate(-50%, -50%);
+    background-image: url("images/applemusic-icon.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 240px;
+    height: 240px;
+    animation-name: spin;
+    animation-duration: 5000ms;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-play-state: running;
+}
+.applemusic-box.colorful-box {
+    clip-path: circle(150% at 17% 50%);
+}
+.applemusic-box.blue-box {
+    background: radial-gradient(circle at 0% 50%, rgba(201,0,106,1) 0%, rgba(201,0,106,1) 25%, rgba(15,22,74,1) 40%, rgba(15,22,74,1) 100%);
+}
+.applemusic-box.colorful-box {
+    background-color: #C9006A;
+    transition-delay: 0ms;
+    opacity: 0;
+}
+
+
+.songs-image {
+    position: absolute;
+    top: 50%;
+    left: 17%;
+    transform: translate(-50%, -50%);
+    background-image: url("images/songs-icon.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 240px;
+    height: 240px;
+    animation-name: spin;
+    animation-duration: 5000ms;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-play-state: running;
+}
+.songs-box.colorful-box {
+    clip-path: circle(150% at 17% 50%);
+}
+.songs-box.blue-box {
+    background-color: #0f164a;
+}
+.songs-box.colorful-box {
+    background-color: #C9006A;
+    transition-delay: 0ms;
+}
+.songs-box.blue-box .songs-image {
+    background-image: url("images/songs-icon-blue.png");
+    opacity: 0.4;
+}
+
+
+.vorabifeier-image {
+    position: absolute;
+    top: 50%;
+    left: 17%;
+    transform: translate(-50%, -50%);
+    background-image: url("images/vorabifeier-icon.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 240px;
+    height: 240px;
+    animation-name: spin;
+    animation-duration: 15000ms;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-play-state: running;
+}
+.vorabifeier-box.colorful-box {
+    clip-path: circle(150% at 17% 50%);
+}
+.vorabifeier-box.blue-box {
+    background-color: #0f164a;
+}
+.vorabifeier-box.colorful-box {
+    background-color: #C6FBFF;
+    transition-delay: 0ms;
+}
+.vorabifeier-box.blue-box .vorabifeier-image {
+    background-image: url("images/vorabifeier-icon-blue.png");
+    opacity: 0.4;
+}
+
+
+.abigag-image {
+    position: absolute;
+    top: 50%;
+    left: 17%;
+    transform: translate(-50%, -50%);
+    background-image: url("images/abigag-icon.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 240px;
+    height: 240px;
+    animation-name: spin;
+    animation-duration: 5000ms;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-play-state: running;
+}
+.abigag-box.colorful-box {
+    clip-path: circle(150% at 17% 50%);
+}
+.abigag-box.blue-box {
+    background-color: #0f164a;
+}
+.abigag-box.colorful-box {
+    background-color: #C9006A;
+    transition-delay: 0ms;
+}
+.abigag-box.blue-box .abigag-image {
+    background-image: url("images/abigag-icon-blue.png");
+    opacity: 0.4;
+}
+
+
+.entlassfeier-image {
+    position: absolute;
+    top: 50%;
+    left: 17%;
+    transform: translate(-50%, -50%);
+    background-image: url("images/entlassfeier-icon.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 240px;
+    height: 240px;
+    animation-name: spin;
+    animation-duration: 15000ms;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-play-state: running;
+}
+.entlassfeier-box.colorful-box {
+    clip-path: circle(150% at 17% 50%);
+}
+.entlassfeier-box.blue-box {
+    background-color: #0f164a;
+}
+.entlassfeier-box.colorful-box {
+    background-color: #C6FBFF;
+    transition-delay: 0ms;
+}
+.entlassfeier-box.blue-box .entlassfeier-image {
+    background-image: url("images/entlassfeier-icon-blue.png");
+    opacity: 0.4;
+}
+
+
+.abiball-image {
+    position: absolute;
+    top: 50%;
+    left: 17%;
+    transform: translate(-50%, -50%);
+    background-image: url("images/abiball-icon.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 240px;
+    height: 240px;
+    animation-name: spin;
+    animation-duration: 10000ms;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-play-state: running;
+}
+.abiball-box.colorful-box {
+    clip-path: circle(150% at 17% 50%);
+}
+.abiball-box.blue-box {
+    background-color: #0f164a;
+}
+.abiball-box.colorful-box {
+    background-color: #C9006A;
+    transition-delay: 0ms;
+}
+.abiball-box.blue-box .abiball-image {
+    background-image: url("images/abiball-icon-blue.png");
+    opacity: 0.4;
+}
+
+
+
+
+
+.article-box {
+    display: block;
+    position: relative;
+    max-width: 600px;
+    margin: 0;
+    margin-left: auto;
+    margin-right: auto;
+}
+.article {
+    margin-left: 2px;
+    margin-right: 8px;
+}
+.title {
+    color: white;
+    font-family: Futura, "Trebuchet MS", Avenir, Arial, sans-serif;
+    font-size: 28px;
+    font-weight: bold;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    overflow-wrap: break-word;
+}
+.subtitle {
+    color: white;
+    font-family: Futura, "Trebuchet MS", Avenir, Arial, sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 55px;
+    margin-bottom: 20px;
+    overflow-wrap: break-word;
+}
+.text {
+    color: white;
+    font-family: Futura, "Trebuchet MS", Avenir, Arial, sans-serif;
+    font-size: 16px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    overflow-wrap: break-word;
+}
+.text-link {
+    color: #7eaff8;
+    font-family: Futura, "Trebuchet MS", Avenir, Arial, sans-serif;
+    font-size: 16px;
+    overflow-wrap: break-word;
+}
+.divider {
+    width: 100px;
+    height: 7px;
+    border-radius: 50px;
+    background-color: #C6FBFF;
+    margin-left: 2px;
+    margin-top: 3px;
+    margin-bottom: 0px;
+}
+
+
+
+
+
+@media(hover) {
+
+
+    .ytmusic-box.colorful-box {
+        clip-path: circle(0% at 17% 50%);
+        opacity: 1;
+    }
+    .box-stack:hover .ytmusic-box.colorful-box {
+        clip-path: circle(150% at 17% 50%);
+    }
+    .box-stack:hover .ytmusic-box {
+        transform: scale(1.05);
+    }
+    .ytmusic-image {
+        animation-play-state: paused;
+    }
+    .box-stack:hover .ytmusic-image-blue {
+        animation-play-state: running;
+    }
+    .box-stack:hover .ytmusic-image {
+        animation-play-state: running;
+    }
+
+
+    .spotify-box.colorful-box {
+        clip-path: circle(0% at 17% 50%);
+        opacity: 1;
+    }
+    .box-stack:hover .spotify-box.colorful-box {
+        clip-path: circle(150% at 17% 50%);
+    }
+    .box-stack:hover .spotify-box {
+        transform: scale(1.05);
+    }
+    .spotify-image {
+        animation-play-state: paused;
+    }
+    .box-stack:hover .spotify-image-blue {
+        animation-play-state: running;
+    }
+    .box-stack:hover .spotify-image {
+        animation-play-state: running;
+    }
+
+
+    .applemusic-box.colorful-box {
+        clip-path: circle(0% at 17% 50%);
+        opacity: 1;
+    }
+    .box-stack:hover .applemusic-box.colorful-box {
+        clip-path: circle(150% at 17% 50%);
+    }
+    .box-stack:hover .applemusic-box {
+        transform: scale(1.05);
+    }
+    .applemusic-image {
+        animation-play-state: paused;
+    }
+    .box-stack:hover .applemusic-image-blue {
+        animation-play-state: running;
+    }
+    .box-stack:hover .applemusic-image {
+        animation-play-state: running;
+    }
+
+
+    .songs-box.colorful-box {
+        clip-path: circle(0% at 17% 50%);
+    }
+    .box-stack:hover .songs-box.colorful-box {
+        clip-path: circle(150% at 17% 50%);
+    }
+    .box-stack:hover .songs-box {
+        transform: scale(1.05);
+    }
+    .songs-image {
+        animation-play-state: paused;
+    }
+    .box-stack:hover .songs-image-blue {
+        animation-play-state: running;
+    }
+    .box-stack:hover .songs-image {
+        animation-play-state: running;
+    }
+
+
+    .vorabifeier-box.colorful-box {
+        clip-path: circle(0% at 17% 50%);
+    }
+    .box-stack:hover .vorabifeier-box.colorful-box {
+        clip-path: circle(150% at 17% 50%);
+    }
+    .box-stack:hover .vorabifeier-box {
+        transform: scale(1.05);
+    }
+    .vorabifeier-image {
+        animation-play-state: paused;
+    }
+    .box-stack:hover .vorabifeier-image-blue {
+        animation-play-state: running;
+    }
+    .box-stack:hover .vorabifeier-image {
+        animation-play-state: running;
+    }
+
+
+    .abigag-box.colorful-box {
+        clip-path: circle(0% at 17% 50%);
+    }
+    .box-stack:hover .abigag-box.colorful-box {
+        clip-path: circle(150% at 17% 50%);
+    }
+    .box-stack:hover .abigag-box {
+        transform: scale(1.05);
+    }
+    .abigag-image {
+        animation-play-state: paused;
+    }
+    .box-stack:hover .abigag-image-blue {
+        animation-play-state: running;
+    }
+    .box-stack:hover .abigag-image {
+        animation-play-state: running;
+    }
+
+
+    .entlassfeier-box.colorful-box {
+        clip-path: circle(0% at 17% 50%);
+    }
+    .box-stack:hover .entlassfeier-box.colorful-box {
+        clip-path: circle(150% at 17% 50%);
+    }
+    .box-stack:hover .entlassfeier-box {
+        transform: scale(1.05);
+    }
+    .entlassfeier-image {
+        animation-play-state: paused;
+    }
+    .box-stack:hover .entlassfeier-image-blue {
+        animation-play-state: running;
+    }
+    .box-stack:hover .entlassfeier-image {
+        animation-play-state: running;
+    }
+
+
+    .abiball-box.colorful-box {
+        clip-path: circle(0% at 17% 50%);
+    }
+    .box-stack:hover .abiball-box.colorful-box {
+        clip-path: circle(150% at 17% 50%);
+    }
+    .box-stack:hover .abiball-box {
+        transform: scale(1.05);
+    }
+    .abiball-image {
+        animation-play-state: paused;
+    }
+    .box-stack:hover .abiball-image-blue {
+        animation-play-state: running;
+    }
+    .box-stack:hover .abiball-image {
+        animation-play-state: running;
+    }
+
+
+    .link-light:hover {
+        color: white;
+        background-color: #001454;
+    }
+    .link-dark:hover {
+        color: #001454;
+        background-color: white;
+    }
+
+
+    .vorabifeier-box .link-light:hover, .abigag-box .link-light:hover, .entlassfeier-box .link-light:hover, .abiball-box .link-light:hover {
+        background-image: url("images/play-light.png");
+    }
+    .vorabifeier-box .link-dark:hover, .abigag-box .link-dark:hover, .entlassfeier-box .link-dark:hover, .abiball-box .link-dark:hover {
+        background-image: url("images/play-dark.png");
+    }
+    .songs-box .link-light:hover {
+        background-image: url("images/forwards-light.png");
+    }
+    .songs-box .link-dark:hover {
+        background-image: url("images/forwards-dark.png");
+    }
+    .applemusic-box .link-light:hover, .spotify-box .link-light:hover, .ytmusic-box .link-light:hover {
+        background-image: url("images/listen-light.png");
+    }
+    .applemusic-box .link-dark:hover, .spotify-box .link-dark:hover, .ytmusic-box .link-dark:hover {
+        background-image: url("images/listen-dark.png");
+    }
+
+
+    .instagram:hover, .youtube:hover, .github:hover {
+        filter: invert(35%) sepia(61%) saturate(729%) hue-rotate(186deg) brightness(99%) contrast(97%);
+    }
+
+
+    .link-footer:hover {
+        color: #7eaff8;
+    }
+    .abitendo-logo:hover {
+        filter: invert(35%) sepia(61%) saturate(729%) hue-rotate(186deg) brightness(99%) contrast(97%) drop-shadow(0px 0px 20px #050f31);
+    }
+
+
+    .text-link{
+        color: white;
+    }
+    .text-link:hover {
+        color: #7eaff8;
+    }
+
+
+    .back-box:hover {
+        background-color: white;
+    }
+    .back-box:hover .back-link {
+        color: #001454;
+        background-image: url("images/backwards-dark.png");
+    }
+
+
+    .shiny-effect-opaque {
+        --b: 6deg;
+        border-radius: 20px;
+        transform: perspective(1200px) rotate3d(var(--r,1,-1),0,calc(var(--j,1)*var(--b)));
+        -webkit-mask: 
+            linear-gradient(135deg,#000f 40%,#000,#000f 60%)
+            100% 100%/250% 250%;
+        transition: .5s;
+        cursor: default;
+    }
+    .shiny-effect-opaque:hover {
+        --j: -1;
+        -webkit-mask-position: 0 0;
+    }
+
+
+    .shiny-effect-opaque-minimal {
+        --b: 3deg;
+        border-radius: 20px;
+        transform: perspective(1200px) rotate3d(var(--r,1,-1),0,calc(var(--j,1)*var(--b)));
+        -webkit-mask: 
+            linear-gradient(135deg,#000f 40%,#000,#000f 60%)
+            100% 100%/250% 250%;
+        transition: .5s;
+        cursor: default;
+    }
+    .shiny-effect-opaque-minimal:hover {
+        --j: -1;
+        -webkit-mask-position: 0 0;
+    }
+
+
+}
